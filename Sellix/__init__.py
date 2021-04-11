@@ -3,7 +3,7 @@ from .Orders import *
 __Name__ = "Sellix"
 __Author__ = "xFueY"
 __AuthorMail__ = "xFueY@protonmail.com"
-__Version__ = "0.0.1H1"
+__Version__ = "0.0.1_1"
 __Description__ = "Python Sellix Wrapper"
 __URL__ = "https://github.com/xFueY/Sellix/"
 __License__ = "MIT"
