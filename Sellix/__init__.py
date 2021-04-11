@@ -10,7 +10,7 @@ from .Payments import *
 __Name__ = "Sellix"
 __Author__ = "xFueY"
 __AuthorMail__ = "xFueY@protonmail.com"
-__Version__ = "1.0.0"
+__Version__ = "1.0.1"
 __Description__ = "Python Sellix Wrapper"
 __URL__ = "https://github.com/xFueY/Sellix/"
 __License__ = "MIT"
