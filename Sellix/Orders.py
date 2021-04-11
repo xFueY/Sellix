@@ -10,4 +10,4 @@ class Orders():
         return requests.get(self.URL + "/orders/" + ID, headers=self.Headers).json()
 
     def List(self, Page : int = 0):
-        return requests.get(self.URL + "/orders?page=" + Page, headers=self.Headers).json()
+        return requests.get(self.URL + "/orders?page=" + str(Page), headers=self.Headers).json()

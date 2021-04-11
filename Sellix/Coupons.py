@@ -10,7 +10,7 @@ class Coupons():
         return requests.get(self.URL + "/coupons/" + ID, headers=self.Headers).json()
 
     def List(self, Page : int = 0):
-        return requests.get(self.URL + "/coupons?page=" + Page, headers=self.Headers).json()
+        return requests.get(self.URL + "/coupons?page=" + str(Page), headers=self.Headers).json()
 
     def Create(self, Code : str, DiscountValue : float, MaxUses : int = -1, ProductsBound : list = []):
         PostData = {"code" : Code, "discount_value" : DiscountValue, "max_uses" : MaxUses, "products_bound" : ProductsBound}

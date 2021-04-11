@@ -10,7 +10,7 @@ class Feedback():
         return requests.get(self.URL + "/feedback/" + ID, headers=self.Headers).json()
 
     def List(self, Page : int = 0):
-        return requests.get(self.URL + "/feedback?page=" + Page, headers=self.Headers).json()
+        return requests.get(self.URL + "/feedback?page=" + str(Page), headers=self.Headers).json()
 
     def Reply(self, ID : str, Message : str):
         PostData = {"reply" : Message}
