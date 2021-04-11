@@ -3,6 +3,7 @@ from .Categories import *
 from .Coupons import *
 from .Feedback import *
 from .Orders import *
+from .Products import *
 from .Queries import *
 from .Payments import *
 
