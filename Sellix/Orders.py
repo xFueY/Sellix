@@ -6,5 +6,8 @@ class Orders():
         self.URL = URL
         self.Headers = Headers
 
-    def FetchAll(self):
-        return requests.get(self.URL + "/orders", headers=self.Headers).json()
+    def Get(self, ID : str):
+        return requests.get(self.URL + "/orders/" + ID, headers=self.Headers).json()
+
+    def List(self, Page : int = 0):
+        return requests.get(self.URL + "/orders?page=" + Page, headers=self.Headers).json()
