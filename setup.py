@@ -12,7 +12,7 @@ Classifiers = [
 setup(
   name=Sellix.__Name__,
   version=Sellix.__Version__,
-  description=sellix.__Description__,
+  description=Sellix.__Description__,
   long_description=open('README.md').read(),
   long_description_content_type="text/markdown",
   url=Sellix.__URL__,
